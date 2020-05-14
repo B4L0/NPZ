@@ -8,14 +8,14 @@ package npz;
 public class Mieszkanie extends ElementPietra
 {
     public String wizytowka;
-    public Pomieszczenie[] mojePomieszczenia;
+    public Pomieszczenie[] pomieszczenia;
  
     @Override
     public double PoliczPole()
     {
         double powierzchnia = 0;
         
-        for (Pomieszczenie p : mojePomieszczenia) 
+        for (Pomieszczenie p : pomieszczenia) 
         {
             powierzchnia += p.PoliczPole();
         }
